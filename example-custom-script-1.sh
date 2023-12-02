@@ -24,6 +24,7 @@
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 svn co https://github.com/brvphoenix/wrtbwmon.git  package/lean/wrtbwmon
+sudo apt install libfuse-dev
 # # Replace a feed source with what you want:
 #sed '/feeds-name/'d feeds.conf.default
 #echo 'method feed-name path/URL' >> feeds.conf.default
