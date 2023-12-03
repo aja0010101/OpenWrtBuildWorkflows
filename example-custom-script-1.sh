@@ -28,7 +28,8 @@ echo 'src-git lienol https://github.com/Lienol/openwrt-package' >>feeds.conf.def
 # echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
-echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git" >> "feeds.conf.default"
+echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
+# echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git" >> "feeds.conf.default"
 svn co https://github.com/brvphoenix/wrtbwmon.git  package/lean/wrtbwmon
 sudo apt install libfuse-dev
 # rm -rf feeds/packages/lang/golang
